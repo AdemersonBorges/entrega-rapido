@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrega</title>
+</head>
+<body>
+    1.HTML - é uma linguagem de marcação de hipertexto
+  é o que estrutura o site como um esqueleto para o corpo
+
+2.HTML - seria como a estrutura site
+  CSS - é o que da estilo ou aparência do site
+  JavaScript - torna possível interagir com o site
+  
+1.H1,H2,H3..... - e assim por diante são usadas para estruturar e organizar as paginas de um site e elas possuem hierarquia
+tipo h1 normalmente usada para títulos e as demais h2,h3  e por diante para algo de menor importância
+IMG - para inserir imagem
+A - que permite vincular links externos e internos
+
+2.OL E UL - são usadas para listas
+OL - para lista ordenada
+Ul - para lista sem ordem definida
+eu usaria a OL para algo que precisa-se de está em ordem ou de importância e a UL para algo sem muita importância
+
+1.a tag vincula links através de url, caso se refira a links externos
+<a href="link da pagina">texto que ao ser clicado abre a pagina do link dentro do href</a> dependendo da sua preferencia o link pode ser aberto na mesma aba ou em uma nova aba.
+no caso de link interno apenas coloque o caminho para a pagina
+exemplo:<a href"pagina01.html">texto que ao ser clicado abre a pagina do link dentro do href</a> ou caso esteja dentro de uma pasta
+exemplo 2:<a href"pasta_de_estudo/estudo.html">texto que ao ser clicado abre a pagina do link dentro do href</a>
+
+2.como atributo importante tag também pode ter como exemplo função de download,type e assim por diante.
+o atributo target poder ser controlado para ser aberto na mesma aba ou em outra aba com: target"_blank" que abre o link em outra aba ou target"_self" que abre o link na mesma aba
+
+1.o atributo src indica ao img qual mídia que será utilizada
+pode ser uma imagem url externa ou interna do nosso projeto
+o atributo alt é utilizado caso a imagem não seja renderizada
+e um texto inserido para o usuário saber do que se trata a imagem
+
+2.alem de imagens pode ser inserido áudio e vídeo
+para que a mídia seja responsiva em diferentes dispositivos ou navegadores você pode incorado em diferentes formatos vou por como exemplo um exercício que fiz
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/audio1.mp3" type="audio/mpeg">
+        <source src="midias/audio1.ogg" type="audio/ogg">
+        <source src="midias/audio1.wav" type="audio/wav">
+        <p>infelismene seu dispositivo não compativel com nenhuma de nossas midias <a href="midias/audio1.mp3">click aqui para baixar o arquivo</a></p>
+    </audio>
+
+1.table - th - tr - td
+a diferença de th e td são semânticas
+a tag th usada para definir cabeçalho e a td usada para algo mais comum
+
+2.o mal uso de tabela para layout pode misturar o conteúdo com a formação tornando o código html menos semântico e difícil de entender
+dificulta a manutenção isso torna o código mais propenso a erros e mais difícil de manter conforme o projeto cresce
+
+1.a importância de semântica é dar significado e contexto as tags html e melhorar a compreensão do conteúdo principalmente pelos usuários
+STRONG - negrito
+EM - itálico
+MAIN - define o conteúdo principal dentro do body em seu documento
+não sei exatamente onde usaria conheço essas tags a pouco tempo e não parei para pensar em qual aplicação seria útil
+
+2.Se você escrevê-lo regularmente desde o início do projeto, a semântica do HTML é escrita mais rapidamente do que a versão não semântica. Além de ser acessível, há outros benefícios de usá-lo
+
+Mais simples de desenvolver: como mencionado anteriormente, você pode obter algumas funcionalidades por padrão, e o código é mais simples de ler e entender.
+O HTML semântico funciona melhor nos dispositivos móveis porque é menos pesado que o código não semântico (aquele código espaguete) quando se trata de tamanho de arquivos e é mais fácil de ajustar para a resposta.
+Isso é bom para o SEO porque os mecanismos de busca priorizam palavras-chave em títulos, links, etc. do que palavras-chave em "divs" não semânticas.
+</body>
+</html>
